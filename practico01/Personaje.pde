@@ -29,4 +29,14 @@ class Personaje extends GameObject {
       this.posicion.y+=this.velocidad.y*Time.getDeltaTime(frameRate);
     }
   }
+    
+    boolean obtenerHongo(PVector hongo) {
+    float d = dist(posicion.x, posicion.y, hongo.x, hongo.y);
+    if (d<20) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
 }

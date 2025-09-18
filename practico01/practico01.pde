@@ -14,6 +14,9 @@ void draw(){
   pj.display();
   hng.display();
   hng.mover();
+  if (pj.obtenerHongo(hng.getPosicion())) {
+        hng = new Hongo(new PVector(int(random(200, 500)), int(random(0, 0))), new PVector(0, 200));
+      }
 }
 
 public void keyPressed(){
