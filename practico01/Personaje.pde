@@ -7,7 +7,7 @@ class Personaje extends GameObject {
     super(posicion);
     this.velocidad = velocidad;
     this.tamanio = tamanio;
-    this.img = loadImage("AutoAmarillo.png");
+    this.img = loadImage();
 
   }
 
